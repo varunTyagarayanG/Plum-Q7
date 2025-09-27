@@ -23,7 +23,7 @@ The codebase is structured around **services**, **controllers** and **routes** t
 1. **Clone the repository**  
    ```bash
    git clone https://github.com/varunTyagarayanG/Plum-Q7.git
-   cd document-extraction-api
+   cd Plum-Q7
    ```
 
 2. **Install dependencies**  
