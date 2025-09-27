@@ -50,7 +50,7 @@ The codebase is structured around **services**, **controllers** and **routes** t
 
 5. **Start the server**  
    ```bash
-   npm start
+   npm run dev
    ```
 
 ---
