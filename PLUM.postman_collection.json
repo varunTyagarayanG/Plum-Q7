@@ -1,0 +1,993 @@
+{
+	"info": {
+		"_postman_id": "1b0e32b0-1cb1-4d08-874f-e56a20a31bf9",
+		"name": "PLUM",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "42533880"
+	},
+	"item": [
+		{
+			"name": "OCR - extract",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file_format",
+							"value": "lab_report",
+							"type": "text"
+						},
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/C:/Users/varun/Downloads/d4Png.png"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}/extract_from_doc",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"extract_from_doc"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "OCR - extract -Minimal",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file_format",
+							"value": "lab_report",
+							"type": "text"
+						},
+						{
+							"key": "file",
+							"type": "file",
+							"src": "postman-cloud:///1f09b17d-c076-42b0-8706-ae9185852093"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}/extract_minimal",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"extract_minimal"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file_format",
+									"value": "lab_report",
+									"type": "text"
+								},
+								{
+									"key": "file",
+									"type": "file",
+									"src": "postman-cloud:///1f09b17d-c076-42b0-8706-ae9185852093"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/extract_minimal",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"extract_minimal"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1693"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"69d-NSLzOgvRTQjnUy6v7z8rLmuuxP8\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 26 Sep 2025 20:32:19 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"tests\": [\n        {\n            \"name\": \"Sodium\",\n            \"value\": 1516,\n            \"unit\": \"mEq/L\",\n            \"range\": {\n                \"low\": 136,\n                \"high\": 145\n            }\n        },\n        {\n            \"name\": \"Sodium\",\n            \"value\": 3,\n            \"unit\": \"mEq/L\",\n            \"range\": {\n                \"low\": 136,\n                \"high\": 145\n            }\n        },\n        {\n            \"name\": \"Blood\",\n            \"value\": 33,\n            \"unit\": null,\n            \"range\": null\n        },\n        {\n            \"name\": \"Sodium\",\n            \"value\": null,\n            \"unit\": \"mEq/L\",\n            \"range\": {\n                \"low\": 136,\n                \"high\": 145\n            }\n        },\n        {\n            \"name\": \"Hemoglobin\",\n            \"value\": 14.7,\n            \"unit\": \"g/dL\",\n            \"range\": {\n                \"low\": 12,\n                \"high\": 15\n            }\n        },\n        {\n            \"name\": \"pH\",\n            \"value\": null,\n            \"unit\": null,\n            \"range\": {\n                \"low\": 4.6,\n                \"high\": 8\n            }\n        },\n        {\n            \"name\": \"RBC\",\n            \"value\": 5.5,\n            \"unit\": \"10^6/uL\",\n            \"range\": {\n                \"low\": 3.5,\n                \"high\": 5.5\n            }\n        },\n        {\n            \"name\": \"HCT\",\n            \"value\": 42.6,\n            \"unit\": \"%\",\n            \"range\": {\n                \"low\": 37,\n                \"high\": 50\n            }\n        },\n        {\n            \"name\": \"MCV\",\n            \"value\": 78.2,\n            \"unit\": \"fL\",\n            \"range\": {\n                \"low\": 82,\n                \"high\": 95\n            }\n        },\n        {\n            \"name\": \"RBC\",\n            \"value\": null,\n            \"unit\": \"10^6/uL\",\n            \"range\": {\n                \"low\": 3.5,\n                \"high\": 5.5\n            }\n        },\n        {\n            \"name\": \"MCH\",\n            \"value\": 27,\n            \"unit\": \"pg\",\n            \"range\": {\n                \"low\": 27,\n                \"high\": 31\n            }\n        },\n        {\n            \"name\": \"MCHC\",\n            \"value\": 34.5,\n            \"unit\": \"g/dL\",\n            \"range\": {\n                \"low\": 32,\n                \"high\": 36\n            }\n        },\n        {\n            \"name\": \"RDW\",\n            \"value\": 13.5,\n            \"unit\": \"%\",\n            \"range\": {\n                \"low\": 11.6,\n                \"high\": 14\n            }\n        },\n        {\n            \"name\": \"RBC\",\n            \"value\": null,\n            \"unit\": \"10^6/uL\",\n            \"range\": {\n                \"low\": 3.5,\n                \"high\": 5.5\n            }\n        },\n        {\n            \"name\": \"WBC\",\n            \"value\": 10400,\n            \"unit\": \"/uL\",\n            \"range\": {\n                \"low\": 4000,\n                \"high\": 11000\n            }\n        },\n        {\n            \"name\": \"NEU%\",\n            \"value\": 64,\n            \"unit\": \"%\",\n            \"range\": {\n                \"low\": 40,\n                \"high\": 70\n            }\n        },\n        {\n            \"name\": \"LYM%\",\n            \"value\": 30,\n            \"unit\": \"%\",\n            \"range\": {\n                \"low\": 20,\n                \"high\": 45\n            }\n        },\n        {\n            \"name\": \"pH\",\n            \"value\": 1,\n            \"unit\": null,\n            \"range\": {\n                \"low\": 4.6,\n                \"high\": 8\n            }\n        },\n        {\n            \"name\": \"MON%\",\n            \"value\": 4,\n            \"unit\": \"%\",\n            \"range\": {\n                \"low\": 2,\n                \"high\": 10\n            }\n        },\n        {\n            \"name\": \"pH\",\n            \"value\": 1,\n            \"unit\": null,\n            \"range\": {\n                \"low\": 4.6,\n                \"high\": 8\n            }\n        },\n        {\n            \"name\": \"pH\",\n            \"value\": 6656,\n            \"unit\": null,\n            \"range\": {\n                \"low\": 4.6,\n                \"high\": 8\n            }\n        },\n        {\n            \"name\": \"pH\",\n            \"value\": 3120,\n            \"unit\": null,\n            \"range\": {\n                \"low\": 4.6,\n                \"high\": 8\n            }\n        },\n        {\n            \"name\": \"pH\",\n            \"value\": 104,\n            \"unit\": null,\n            \"range\": {\n                \"low\": 4.6,\n                \"high\": 8\n            }\n        },\n        {\n            \"name\": \"Sodium\",\n            \"value\": 3,\n            \"unit\": \"mEq/L\",\n            \"range\": {\n                \"low\": 136,\n                \"high\": 145\n            }\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "OCR - extract - Raw",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file_format",
+							"value": "lab_report",
+							"type": "text"
+						},
+						{
+							"key": "file",
+							"description": "png format input - neat",
+							"type": "file",
+							"src": "/C:/Users/varun/Downloads/d4Png.png",
+							"disabled": true
+						},
+						{
+							"key": "file",
+							"description": "snanned pdf input -neat",
+							"type": "file",
+							"src": "/C:/Users/varun/Downloads/neat_scaned.pdf",
+							"disabled": true
+						},
+						{
+							"key": "file",
+							"description": "scanned pdf input - crumbled ",
+							"type": "file",
+							"src": "/C:/Users/varun/Downloads/crumbled_scned.pdf",
+							"disabled": true
+						},
+						{
+							"key": "text",
+							"value": "\"Hemoglobin: 13.4 g/dL WBC: 6.2 10^3/uL Platelet Count: 250 10^3/uL\" ",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}/extract_raw",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"extract_raw"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file_format",
+									"value": "lab_report",
+									"type": "text"
+								},
+								{
+									"key": "file",
+									"type": "file",
+									"src": "postman-cloud:///1f09b17d-c076-42b0-8706-ae9185852093"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/extract_minimal",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"extract_minimal"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1693"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"69d-NSLzOgvRTQjnUy6v7z8rLmuuxP8\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 26 Sep 2025 20:32:19 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"tests\": [\n        {\n            \"name\": \"Sodium\",\n            \"value\": 1516,\n            \"unit\": \"mEq/L\",\n            \"range\": {\n                \"low\": 136,\n                \"high\": 145\n            }\n        },\n        {\n            \"name\": \"Sodium\",\n            \"value\": 3,\n            \"unit\": \"mEq/L\",\n            \"range\": {\n                \"low\": 136,\n                \"high\": 145\n            }\n        },\n        {\n            \"name\": \"Blood\",\n            \"value\": 33,\n            \"unit\": null,\n            \"range\": null\n        },\n        {\n            \"name\": \"Sodium\",\n            \"value\": null,\n            \"unit\": \"mEq/L\",\n            \"range\": {\n                \"low\": 136,\n                \"high\": 145\n            }\n        },\n        {\n            \"name\": \"Hemoglobin\",\n            \"value\": 14.7,\n            \"unit\": \"g/dL\",\n            \"range\": {\n                \"low\": 12,\n                \"high\": 15\n            }\n        },\n        {\n            \"name\": \"pH\",\n            \"value\": null,\n            \"unit\": null,\n            \"range\": {\n                \"low\": 4.6,\n                \"high\": 8\n            }\n        },\n        {\n            \"name\": \"RBC\",\n            \"value\": 5.5,\n            \"unit\": \"10^6/uL\",\n            \"range\": {\n                \"low\": 3.5,\n                \"high\": 5.5\n            }\n        },\n        {\n            \"name\": \"HCT\",\n            \"value\": 42.6,\n            \"unit\": \"%\",\n            \"range\": {\n                \"low\": 37,\n                \"high\": 50\n            }\n        },\n        {\n            \"name\": \"MCV\",\n            \"value\": 78.2,\n            \"unit\": \"fL\",\n            \"range\": {\n                \"low\": 82,\n                \"high\": 95\n            }\n        },\n        {\n            \"name\": \"RBC\",\n            \"value\": null,\n            \"unit\": \"10^6/uL\",\n            \"range\": {\n                \"low\": 3.5,\n                \"high\": 5.5\n            }\n        },\n        {\n            \"name\": \"MCH\",\n            \"value\": 27,\n            \"unit\": \"pg\",\n            \"range\": {\n                \"low\": 27,\n                \"high\": 31\n            }\n        },\n        {\n            \"name\": \"MCHC\",\n            \"value\": 34.5,\n            \"unit\": \"g/dL\",\n            \"range\": {\n                \"low\": 32,\n                \"high\": 36\n            }\n        },\n        {\n            \"name\": \"RDW\",\n            \"value\": 13.5,\n            \"unit\": \"%\",\n            \"range\": {\n                \"low\": 11.6,\n                \"high\": 14\n            }\n        },\n        {\n            \"name\": \"RBC\",\n            \"value\": null,\n            \"unit\": \"10^6/uL\",\n            \"range\": {\n                \"low\": 3.5,\n                \"high\": 5.5\n            }\n        },\n        {\n            \"name\": \"WBC\",\n            \"value\": 10400,\n            \"unit\": \"/uL\",\n            \"range\": {\n                \"low\": 4000,\n                \"high\": 11000\n            }\n        },\n        {\n            \"name\": \"NEU%\",\n            \"value\": 64,\n            \"unit\": \"%\",\n            \"range\": {\n                \"low\": 40,\n                \"high\": 70\n            }\n        },\n        {\n            \"name\": \"LYM%\",\n            \"value\": 30,\n            \"unit\": \"%\",\n            \"range\": {\n                \"low\": 20,\n                \"high\": 45\n            }\n        },\n        {\n            \"name\": \"pH\",\n            \"value\": 1,\n            \"unit\": null,\n            \"range\": {\n                \"low\": 4.6,\n                \"high\": 8\n            }\n        },\n        {\n            \"name\": \"MON%\",\n            \"value\": 4,\n            \"unit\": \"%\",\n            \"range\": {\n                \"low\": 2,\n                \"high\": 10\n            }\n        },\n        {\n            \"name\": \"pH\",\n            \"value\": 1,\n            \"unit\": null,\n            \"range\": {\n                \"low\": 4.6,\n                \"high\": 8\n            }\n        },\n        {\n            \"name\": \"pH\",\n            \"value\": 6656,\n            \"unit\": null,\n            \"range\": {\n                \"low\": 4.6,\n                \"high\": 8\n            }\n        },\n        {\n            \"name\": \"pH\",\n            \"value\": 3120,\n            \"unit\": null,\n            \"range\": {\n                \"low\": 4.6,\n                \"high\": 8\n            }\n        },\n        {\n            \"name\": \"pH\",\n            \"value\": 104,\n            \"unit\": null,\n            \"range\": {\n                \"low\": 4.6,\n                \"high\": 8\n            }\n        },\n        {\n            \"name\": \"Sodium\",\n            \"value\": 3,\n            \"unit\": \"mEq/L\",\n            \"range\": {\n                \"low\": 136,\n                \"high\": 145\n            }\n        }\n    ]\n}"
+				},
+				{
+					"name": "png-neat",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file_format",
+									"value": "lab_report",
+									"type": "text"
+								},
+								{
+									"key": "file",
+									"description": "png format input - neat",
+									"type": "file",
+									"src": "/C:/Users/varun/Downloads/d4Png.png"
+								},
+								{
+									"key": "file",
+									"description": "snanned pdf input -neat",
+									"type": "file",
+									"src": "/C:/Users/varun/Downloads/neat_scaned.pdf",
+									"disabled": true
+								},
+								{
+									"key": "file",
+									"description": "scanned pdf input - crumbled ",
+									"type": "file",
+									"src": "/C:/Users/varun/Downloads/crumbled_scned.pdf",
+									"disabled": true
+								},
+								{
+									"key": "text",
+									"value": "\"Hemoglobin: 13.4 g/dL WBC: 6.2 10^3/uL Platelet Count: 250 10^3/uL\" ",
+									"description": "text input",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/extract_raw",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"extract_raw"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "Content-Length",
+							"value": "1823"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 27 Sep 2025 10:01:50 GMT"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"71f-2lFvbp54TEsOscdU224Ap6WBfBE\""
+						},
+						{
+							"key": "Ngrok-Agent-Ips",
+							"value": "2401:4900:971e:b22d:c8c0:61e4:d76c:214e"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"tests_raw\": [\n        \"VIJAYA DIAGNOSTIC CENTRE\",\n        \"we Opp.Metro Pillar No. A1516, Indira Nagar. Dilsukhnagar, Hyderabad - 500089\",\n        \"VIJAYA\",\n        \"Name : Mr. G RAHUL SANKRITYAYAN Registered on: 03-Jul-2025 16:18\",\n        \"Age/Gender 23 Years / Male Collected on : 03-Jul-2025 16:21\",\n        \"Registration ID : 250330029141 Released on : 03-Jul-2025 20:22\",\n        \"Ref. By : Dr. Self Printedon  : 03-Jul-2025 20:37\",\n        \"Sample Type : Whole Blood - EDTA Regn Centre : Vanasthalipuram - 33\",\n        \"TEST NAME RESULT UNIT BIOLOGICAL REFERENCE INTERVAL\",\n        \"Haemoglobin co 147 gm/dL. 13.0-17.0\",\n        \"Method: Photometric Measurement\",\n        \"Total RBC Count : 55 Cells/cumm 45-55\",\n        \"Method: Coulter Principle\",\n        \"Packed Cell Volume / Hematocrit © 426 % 40.0 - 50.0\",\n        \"Method: Calculated\",\n        \"MCV : 78.2 fL 83.0-101.0\",\n        \"Method: Derived From RBC Histogram\",\n        \"MCH ° : 27.0 Pg 27.0 - 32.0\",\n        \"Method: Calculated\",\n        \"MCHC 345 gm/dL 31.5-345\",\n        \"Method: Calculated\",\n        \"RDW : 13.5 % 11.6 - 14.0\",\n        \"Method: Derived From RBC Histogram ‘\",\n        \"Total Leucocytes (WBC) Count : 10400 Cells/cumm 4000 - 10000\",\n        \"Method: Coulter Principle\",\n        \"Differential count\",\n        \"Neutrophils © 64 % 40 - 80\",\n        \"Method: VCS 360 Technology and Microscopy\",\n        \"Lymphocytes 30 % 20-40\",\n        \"Method: VCS 360 Technology and Microscopy\",\n        \"Eosinophils : 1 % 1-6\",\n        \"Method: VCS 360 Technology and Microscopy\",\n        \"Monocytes : 4 % 2-10\",\n        \"Method: VCS 360 Technology and Microscopy\",\n        \"Basophils 1 0-2\",\n        \"Method: VCSn Technology and Microscopy\",\n        \"Absolute Leucocyte Count\",\n        \"Absolute Neutrophil Count © 6656 Cells/cumm 2000 - 7000\",\n        \"Method: Calculated\",\n        \"Absolute Lymphocyte Count © 3120 Cells/cumm 1000 - 3000\",\n        \"Method: Calculated\",\n        \"Absolute Eosinophil Count : 104 Cells/cumm 20 - 500\",\n        \"Method: Calculated\",\n        \"* Suggested Clinical Correlation, If Necessary Kindly Discuss with signatory page 3 of 4\",\n        \"Terms and Conditions of Reporting mentioned overleaf\"\n    ],\n    \"confidence\": 0.83\n}"
+				}
+			]
+		},
+		{
+			"name": "OCR - extract -Normalized",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file_format",
+							"value": "lab_report",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "file",
+							"description": "png format input - neat",
+							"type": "file",
+							"src": "/C:/Users/varun/Downloads/d4Png.png",
+							"disabled": true
+						},
+						{
+							"key": "file",
+							"description": "snanned pdf input -neat",
+							"type": "file",
+							"src": "/C:/Users/varun/Downloads/neat_scaned.pdf",
+							"disabled": true
+						},
+						{
+							"key": "file",
+							"description": "scanned pdf input - crumbled ",
+							"type": "file",
+							"src": "/C:/Users/varun/Downloads/crumbled_scned.pdf",
+							"disabled": true
+						},
+						{
+							"key": "text",
+							"value": "\"Hemoglobin: 13.4 g/dL WBC: 6.2 10^3/uL Platelet Count: 250 10^3/uL\" ",
+							"description": "text input",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}/extract_normalized",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"extract_normalized"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file_format",
+									"value": "lab_report",
+									"type": "text"
+								},
+								{
+									"key": "file",
+									"type": "file",
+									"src": "postman-cloud:///1f09b17d-c076-42b0-8706-ae9185852093"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/extract_minimal",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"extract_minimal"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1693"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"69d-NSLzOgvRTQjnUy6v7z8rLmuuxP8\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 26 Sep 2025 20:32:19 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"tests\": [\n        {\n            \"name\": \"Sodium\",\n            \"value\": 1516,\n            \"unit\": \"mEq/L\",\n            \"range\": {\n                \"low\": 136,\n                \"high\": 145\n            }\n        },\n        {\n            \"name\": \"Sodium\",\n            \"value\": 3,\n            \"unit\": \"mEq/L\",\n            \"range\": {\n                \"low\": 136,\n                \"high\": 145\n            }\n        },\n        {\n            \"name\": \"Blood\",\n            \"value\": 33,\n            \"unit\": null,\n            \"range\": null\n        },\n        {\n            \"name\": \"Sodium\",\n            \"value\": null,\n            \"unit\": \"mEq/L\",\n            \"range\": {\n                \"low\": 136,\n                \"high\": 145\n            }\n        },\n        {\n            \"name\": \"Hemoglobin\",\n            \"value\": 14.7,\n            \"unit\": \"g/dL\",\n            \"range\": {\n                \"low\": 12,\n                \"high\": 15\n            }\n        },\n        {\n            \"name\": \"pH\",\n            \"value\": null,\n            \"unit\": null,\n            \"range\": {\n                \"low\": 4.6,\n                \"high\": 8\n            }\n        },\n        {\n            \"name\": \"RBC\",\n            \"value\": 5.5,\n            \"unit\": \"10^6/uL\",\n            \"range\": {\n                \"low\": 3.5,\n                \"high\": 5.5\n            }\n        },\n        {\n            \"name\": \"HCT\",\n            \"value\": 42.6,\n            \"unit\": \"%\",\n            \"range\": {\n                \"low\": 37,\n                \"high\": 50\n            }\n        },\n        {\n            \"name\": \"MCV\",\n            \"value\": 78.2,\n            \"unit\": \"fL\",\n            \"range\": {\n                \"low\": 82,\n                \"high\": 95\n            }\n        },\n        {\n            \"name\": \"RBC\",\n            \"value\": null,\n            \"unit\": \"10^6/uL\",\n            \"range\": {\n                \"low\": 3.5,\n                \"high\": 5.5\n            }\n        },\n        {\n            \"name\": \"MCH\",\n            \"value\": 27,\n            \"unit\": \"pg\",\n            \"range\": {\n                \"low\": 27,\n                \"high\": 31\n            }\n        },\n        {\n            \"name\": \"MCHC\",\n            \"value\": 34.5,\n            \"unit\": \"g/dL\",\n            \"range\": {\n                \"low\": 32,\n                \"high\": 36\n            }\n        },\n        {\n            \"name\": \"RDW\",\n            \"value\": 13.5,\n            \"unit\": \"%\",\n            \"range\": {\n                \"low\": 11.6,\n                \"high\": 14\n            }\n        },\n        {\n            \"name\": \"RBC\",\n            \"value\": null,\n            \"unit\": \"10^6/uL\",\n            \"range\": {\n                \"low\": 3.5,\n                \"high\": 5.5\n            }\n        },\n        {\n            \"name\": \"WBC\",\n            \"value\": 10400,\n            \"unit\": \"/uL\",\n            \"range\": {\n                \"low\": 4000,\n                \"high\": 11000\n            }\n        },\n        {\n            \"name\": \"NEU%\",\n            \"value\": 64,\n            \"unit\": \"%\",\n            \"range\": {\n                \"low\": 40,\n                \"high\": 70\n            }\n        },\n        {\n            \"name\": \"LYM%\",\n            \"value\": 30,\n            \"unit\": \"%\",\n            \"range\": {\n                \"low\": 20,\n                \"high\": 45\n            }\n        },\n        {\n            \"name\": \"pH\",\n            \"value\": 1,\n            \"unit\": null,\n            \"range\": {\n                \"low\": 4.6,\n                \"high\": 8\n            }\n        },\n        {\n            \"name\": \"MON%\",\n            \"value\": 4,\n            \"unit\": \"%\",\n            \"range\": {\n                \"low\": 2,\n                \"high\": 10\n            }\n        },\n        {\n            \"name\": \"pH\",\n            \"value\": 1,\n            \"unit\": null,\n            \"range\": {\n                \"low\": 4.6,\n                \"high\": 8\n            }\n        },\n        {\n            \"name\": \"pH\",\n            \"value\": 6656,\n            \"unit\": null,\n            \"range\": {\n                \"low\": 4.6,\n                \"high\": 8\n            }\n        },\n        {\n            \"name\": \"pH\",\n            \"value\": 3120,\n            \"unit\": null,\n            \"range\": {\n                \"low\": 4.6,\n                \"high\": 8\n            }\n        },\n        {\n            \"name\": \"pH\",\n            \"value\": 104,\n            \"unit\": null,\n            \"range\": {\n                \"low\": 4.6,\n                \"high\": 8\n            }\n        },\n        {\n            \"name\": \"Sodium\",\n            \"value\": 3,\n            \"unit\": \"mEq/L\",\n            \"range\": {\n                \"low\": 136,\n                \"high\": 145\n            }\n        }\n    ]\n}"
+				},
+				{
+					"name": "png-neat",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file_format",
+									"value": "lab_report",
+									"type": "text"
+								},
+								{
+									"key": "file",
+									"description": "png format input - neat",
+									"type": "file",
+									"src": "/C:/Users/varun/Downloads/d4Png.png"
+								},
+								{
+									"key": "file",
+									"description": "snanned pdf input -neat",
+									"type": "file",
+									"src": "/C:/Users/varun/Downloads/neat_scaned.pdf",
+									"disabled": true
+								},
+								{
+									"key": "file",
+									"description": "scanned pdf input - crumbled ",
+									"type": "file",
+									"src": "/C:/Users/varun/Downloads/crumbled_scned.pdf",
+									"disabled": true
+								},
+								{
+									"key": "text",
+									"value": "\"Hemoglobin: 13.4 g/dL WBC: 6.2 10^3/uL Platelet Count: 250 10^3/uL\" ",
+									"description": "text input",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/extract_normalized",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"extract_normalized"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "Content-Length",
+							"value": "1627"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 27 Sep 2025 10:02:14 GMT"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"65b-smWieFVHamgIREd0PbqwvcVc1wk\""
+						},
+						{
+							"key": "Ngrok-Agent-Ips",
+							"value": "2401:4900:971e:b22d:c8c0:61e4:d76c:214e"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"tests\": [\n        {\n            \"name\": \"Sodium\",\n            \"value\": 3,\n            \"unit\": \"mEq/L\",\n            \"status\": \"low\",\n            \"ref_range\": {\n                \"low\": 136,\n                \"high\": 144\n            }\n        },\n        {\n            \"name\": \"Clotting Time\",\n            \"value\": 23,\n            \"unit\": \"minutes\",\n            \"status\": \"high\",\n            \"ref_range\": {\n                \"low\": 4,\n                \"high\": 8\n            }\n        },\n        {\n            \"name\": \"SGOT\",\n            \"value\": 33,\n            \"unit\": \"U/L\",\n            \"status\": \"normal\",\n            \"ref_range\": {\n                \"low\": 8,\n                \"high\": 33\n            }\n        },\n        {\n            \"name\": \"Hemoglobin\",\n            \"value\": 14.7,\n            \"unit\": \"g/dL\",\n            \"status\": \"normal\",\n            \"ref_range\": {\n                \"low\": 12,\n                \"high\": 15\n            }\n        },\n        {\n            \"name\": \"RBC\",\n            \"value\": 5.5,\n            \"unit\": \"10^6/uL\",\n            \"status\": \"normal\",\n            \"ref_range\": {\n                \"low\": 3.5,\n                \"high\": 5.5\n            }\n        },\n        {\n            \"name\": \"HCT\",\n            \"value\": 42.6,\n            \"unit\": \"%\",\n            \"status\": \"normal\",\n            \"ref_range\": {\n                \"low\": 37,\n                \"high\": 50\n            }\n        },\n        {\n            \"name\": \"MCV\",\n            \"value\": 78.2,\n            \"unit\": \"fL\",\n            \"status\": \"low\",\n            \"ref_range\": {\n                \"low\": 82,\n                \"high\": 95\n            }\n        },\n        {\n            \"name\": \"MCH\",\n            \"value\": 27,\n            \"unit\": \"pg\",\n            \"status\": \"normal\",\n            \"ref_range\": {\n                \"low\": 27,\n                \"high\": 31\n            }\n        },\n        {\n            \"name\": \"MCHC\",\n            \"value\": 34.5,\n            \"unit\": \"g/dL\",\n            \"status\": \"normal\",\n            \"ref_range\": {\n                \"low\": 32,\n                \"high\": 36\n            }\n        },\n        {\n            \"name\": \"RDW\",\n            \"value\": 13.5,\n            \"unit\": \"%\",\n            \"status\": \"normal\",\n            \"ref_range\": {\n                \"low\": 11.6,\n                \"high\": 14\n            }\n        },\n        {\n            \"name\": \"WBC\",\n            \"value\": 10400,\n            \"unit\": \"/uL\",\n            \"status\": \"normal\",\n            \"ref_range\": {\n                \"low\": 4000,\n                \"high\": 11000\n            }\n        },\n        {\n            \"name\": \"NEU%\",\n            \"value\": 64,\n            \"unit\": \"%\",\n            \"status\": \"normal\",\n            \"ref_range\": {\n                \"low\": 40,\n                \"high\": 70\n            }\n        },\n        {\n            \"name\": \"LYM%\",\n            \"value\": 30,\n            \"unit\": \"%\",\n            \"status\": \"normal\",\n            \"ref_range\": {\n                \"low\": 20,\n                \"high\": 45\n            }\n        },\n        {\n            \"name\": \"EOS%\",\n            \"value\": 1,\n            \"unit\": \"%\",\n            \"status\": \"normal\",\n            \"ref_range\": {\n                \"low\": 1,\n                \"high\": 6\n            }\n        },\n        {\n            \"name\": \"MON%\",\n            \"value\": 4,\n            \"unit\": \"%\",\n            \"status\": \"normal\",\n            \"ref_range\": {\n                \"low\": 2,\n                \"high\": 10\n            }\n        },\n        {\n            \"name\": \"BAS%\",\n            \"value\": 1,\n            \"unit\": \"%\",\n            \"status\": \"normal\",\n            \"ref_range\": {\n                \"low\": 0,\n                \"high\": 2\n            }\n        },\n        {\n            \"name\": \"Absolute Neutrophil Count\",\n            \"value\": 6.656,\n            \"unit\": \"10^3/uL\",\n            \"status\": \"normal\",\n            \"ref_range\": {\n                \"low\": 2,\n                \"high\": 7\n            }\n        }\n    ],\n    \"normalization_confidence\": 0.7\n}"
+				}
+			]
+		},
+		{
+			"name": "OCR - extract - Summary",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file_format",
+							"value": "lab_report",
+							"type": "text"
+						},
+						{
+							"key": "file",
+							"description": "png format input - neat",
+							"type": "file",
+							"src": "/C:/Users/varun/Downloads/d4Png.png",
+							"disabled": true
+						},
+						{
+							"key": "file",
+							"description": "snanned pdf input -neat",
+							"type": "file",
+							"src": "/C:/Users/varun/Downloads/neat_scaned.pdf"
+						},
+						{
+							"key": "file",
+							"description": "scanned pdf input - crumbled ",
+							"type": "file",
+							"src": "/C:/Users/varun/Downloads/crumbled_scned.pdf",
+							"disabled": true
+						},
+						{
+							"key": "text",
+							"value": "\"Hemoglobin: 13.4 g/dL WBC: 6.2 10^3/uL Platelet Count: 250 10^3/uL\" ",
+							"description": "text input",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}/extract_summary",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"extract_summary"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file_format",
+									"value": "lab_report",
+									"type": "text"
+								},
+								{
+									"key": "file",
+									"type": "file",
+									"src": "postman-cloud:///1f09b17d-c076-42b0-8706-ae9185852093"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/extract_minimal",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"extract_minimal"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1693"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"69d-NSLzOgvRTQjnUy6v7z8rLmuuxP8\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 26 Sep 2025 20:32:19 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"tests\": [\n        {\n            \"name\": \"Sodium\",\n            \"value\": 1516,\n            \"unit\": \"mEq/L\",\n            \"range\": {\n                \"low\": 136,\n                \"high\": 145\n            }\n        },\n        {\n            \"name\": \"Sodium\",\n            \"value\": 3,\n            \"unit\": \"mEq/L\",\n            \"range\": {\n                \"low\": 136,\n                \"high\": 145\n            }\n        },\n        {\n            \"name\": \"Blood\",\n            \"value\": 33,\n            \"unit\": null,\n            \"range\": null\n        },\n        {\n            \"name\": \"Sodium\",\n            \"value\": null,\n            \"unit\": \"mEq/L\",\n            \"range\": {\n                \"low\": 136,\n                \"high\": 145\n            }\n        },\n        {\n            \"name\": \"Hemoglobin\",\n            \"value\": 14.7,\n            \"unit\": \"g/dL\",\n            \"range\": {\n                \"low\": 12,\n                \"high\": 15\n            }\n        },\n        {\n            \"name\": \"pH\",\n            \"value\": null,\n            \"unit\": null,\n            \"range\": {\n                \"low\": 4.6,\n                \"high\": 8\n            }\n        },\n        {\n            \"name\": \"RBC\",\n            \"value\": 5.5,\n            \"unit\": \"10^6/uL\",\n            \"range\": {\n                \"low\": 3.5,\n                \"high\": 5.5\n            }\n        },\n        {\n            \"name\": \"HCT\",\n            \"value\": 42.6,\n            \"unit\": \"%\",\n            \"range\": {\n                \"low\": 37,\n                \"high\": 50\n            }\n        },\n        {\n            \"name\": \"MCV\",\n            \"value\": 78.2,\n            \"unit\": \"fL\",\n            \"range\": {\n                \"low\": 82,\n                \"high\": 95\n            }\n        },\n        {\n            \"name\": \"RBC\",\n            \"value\": null,\n            \"unit\": \"10^6/uL\",\n            \"range\": {\n                \"low\": 3.5,\n                \"high\": 5.5\n            }\n        },\n        {\n            \"name\": \"MCH\",\n            \"value\": 27,\n            \"unit\": \"pg\",\n            \"range\": {\n                \"low\": 27,\n                \"high\": 31\n            }\n        },\n        {\n            \"name\": \"MCHC\",\n            \"value\": 34.5,\n            \"unit\": \"g/dL\",\n            \"range\": {\n                \"low\": 32,\n                \"high\": 36\n            }\n        },\n        {\n            \"name\": \"RDW\",\n            \"value\": 13.5,\n            \"unit\": \"%\",\n            \"range\": {\n                \"low\": 11.6,\n                \"high\": 14\n            }\n        },\n        {\n            \"name\": \"RBC\",\n            \"value\": null,\n            \"unit\": \"10^6/uL\",\n            \"range\": {\n                \"low\": 3.5,\n                \"high\": 5.5\n            }\n        },\n        {\n            \"name\": \"WBC\",\n            \"value\": 10400,\n            \"unit\": \"/uL\",\n            \"range\": {\n                \"low\": 4000,\n                \"high\": 11000\n            }\n        },\n        {\n            \"name\": \"NEU%\",\n            \"value\": 64,\n            \"unit\": \"%\",\n            \"range\": {\n                \"low\": 40,\n                \"high\": 70\n            }\n        },\n        {\n            \"name\": \"LYM%\",\n            \"value\": 30,\n            \"unit\": \"%\",\n            \"range\": {\n                \"low\": 20,\n                \"high\": 45\n            }\n        },\n        {\n            \"name\": \"pH\",\n            \"value\": 1,\n            \"unit\": null,\n            \"range\": {\n                \"low\": 4.6,\n                \"high\": 8\n            }\n        },\n        {\n            \"name\": \"MON%\",\n            \"value\": 4,\n            \"unit\": \"%\",\n            \"range\": {\n                \"low\": 2,\n                \"high\": 10\n            }\n        },\n        {\n            \"name\": \"pH\",\n            \"value\": 1,\n            \"unit\": null,\n            \"range\": {\n                \"low\": 4.6,\n                \"high\": 8\n            }\n        },\n        {\n            \"name\": \"pH\",\n            \"value\": 6656,\n            \"unit\": null,\n            \"range\": {\n                \"low\": 4.6,\n                \"high\": 8\n            }\n        },\n        {\n            \"name\": \"pH\",\n            \"value\": 3120,\n            \"unit\": null,\n            \"range\": {\n                \"low\": 4.6,\n                \"high\": 8\n            }\n        },\n        {\n            \"name\": \"pH\",\n            \"value\": 104,\n            \"unit\": null,\n            \"range\": {\n                \"low\": 4.6,\n                \"high\": 8\n            }\n        },\n        {\n            \"name\": \"Sodium\",\n            \"value\": 3,\n            \"unit\": \"mEq/L\",\n            \"range\": {\n                \"low\": 136,\n                \"high\": 145\n            }\n        }\n    ]\n}"
+				},
+				{
+					"name": "png-neat",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file_format",
+									"value": "lab_report",
+									"type": "text"
+								},
+								{
+									"key": "file",
+									"description": "png format input - neat",
+									"type": "file",
+									"src": "/C:/Users/varun/Downloads/d4Png.png"
+								},
+								{
+									"key": "file",
+									"description": "snanned pdf input -neat",
+									"type": "file",
+									"src": "/C:/Users/varun/Downloads/neat_scaned.pdf",
+									"disabled": true
+								},
+								{
+									"key": "file",
+									"description": "scanned pdf input - crumbled ",
+									"type": "file",
+									"src": "/C:/Users/varun/Downloads/crumbled_scned.pdf",
+									"disabled": true
+								},
+								{
+									"key": "text",
+									"value": "\"Hemoglobin: 13.4 g/dL WBC: 6.2 10^3/uL Platelet Count: 250 10^3/uL\" ",
+									"description": "text input",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/extract_summary",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"extract_summary"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "Content-Length",
+							"value": "1646"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 27 Sep 2025 10:03:07 GMT"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"66e-V3PyEJcsS1BwGe9wZ6y/AKw/SaI\""
+						},
+						{
+							"key": "Ngrok-Agent-Ips",
+							"value": "2401:4900:971e:b22d:c8c0:61e4:d76c:214e"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"tests\": [\n        {\n            \"name\": \"Sodium\",\n            \"value\": 3,\n            \"unit\": \"mEq/L\",\n            \"status\": \"low\",\n            \"ref_range\": {\n                \"low\": 136,\n                \"high\": 144\n            }\n        },\n        {\n            \"name\": \"Clotting Time\",\n            \"value\": 23,\n            \"unit\": \"minutes\",\n            \"status\": \"high\",\n            \"ref_range\": {\n                \"low\": 4,\n                \"high\": 8\n            }\n        },\n        {\n            \"name\": \"SGOT\",\n            \"value\": 33,\n            \"unit\": \"U/L\",\n            \"status\": \"normal\",\n            \"ref_range\": {\n                \"low\": 8,\n                \"high\": 33\n            }\n        },\n        {\n            \"name\": \"Hemoglobin\",\n            \"value\": 14.7,\n            \"unit\": \"g/dL\",\n            \"status\": \"normal\",\n            \"ref_range\": {\n                \"low\": 12,\n                \"high\": 15\n            }\n        },\n        {\n            \"name\": \"RBC\",\n            \"value\": 5.5,\n            \"unit\": \"10^6/uL\",\n            \"status\": \"normal\",\n            \"ref_range\": {\n                \"low\": 3.5,\n                \"high\": 5.5\n            }\n        },\n        {\n            \"name\": \"HCT\",\n            \"value\": 42.6,\n            \"unit\": \"%\",\n            \"status\": \"normal\",\n            \"ref_range\": {\n                \"low\": 37,\n                \"high\": 50\n            }\n        },\n        {\n            \"name\": \"MCV\",\n            \"value\": 78.2,\n            \"unit\": \"fL\",\n            \"status\": \"low\",\n            \"ref_range\": {\n                \"low\": 82,\n                \"high\": 95\n            }\n        },\n        {\n            \"name\": \"MCH\",\n            \"value\": 27,\n            \"unit\": \"pg\",\n            \"status\": \"normal\",\n            \"ref_range\": {\n                \"low\": 27,\n                \"high\": 31\n            }\n        },\n        {\n            \"name\": \"MCHC\",\n            \"value\": 34.5,\n            \"unit\": \"g/dL\",\n            \"status\": \"normal\",\n            \"ref_range\": {\n                \"low\": 32,\n                \"high\": 36\n            }\n        },\n        {\n            \"name\": \"RDW\",\n            \"value\": 13.5,\n            \"unit\": \"%\",\n            \"status\": \"normal\",\n            \"ref_range\": {\n                \"low\": 11.6,\n                \"high\": 14\n            }\n        },\n        {\n            \"name\": \"WBC\",\n            \"value\": 10400,\n            \"unit\": \"/uL\",\n            \"status\": \"normal\",\n            \"ref_range\": {\n                \"low\": 4000,\n                \"high\": 11000\n            }\n        },\n        {\n            \"name\": \"NEU%\",\n            \"value\": 64,\n            \"unit\": \"%\",\n            \"status\": \"normal\",\n            \"ref_range\": {\n                \"low\": 40,\n                \"high\": 70\n            }\n        },\n        {\n            \"name\": \"LYM%\",\n            \"value\": 30,\n            \"unit\": \"%\",\n            \"status\": \"normal\",\n            \"ref_range\": {\n                \"low\": 20,\n                \"high\": 45\n            }\n        },\n        {\n            \"name\": \"EOS%\",\n            \"value\": 1,\n            \"unit\": \"%\",\n            \"status\": \"normal\",\n            \"ref_range\": {\n                \"low\": 1,\n                \"high\": 6\n            }\n        },\n        {\n            \"name\": \"MON%\",\n            \"value\": 4,\n            \"unit\": \"%\",\n            \"status\": \"normal\",\n            \"ref_range\": {\n                \"low\": 2,\n                \"high\": 10\n            }\n        },\n        {\n            \"name\": \"BAS%\",\n            \"value\": 1,\n            \"unit\": \"%\",\n            \"status\": \"normal\",\n            \"ref_range\": {\n                \"low\": 0,\n                \"high\": 2\n            }\n        },\n        {\n            \"name\": \"Absolute Neutrophil Count\",\n            \"value\": 6.656,\n            \"unit\": \"10^3/uL\",\n            \"status\": \"normal\",\n            \"ref_range\": {\n                \"low\": 2,\n                \"high\": 7\n            }\n        }\n    ],\n    \"summary\": {\n        \"error\": \"timeout of 30000ms exceeded\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "OCR - extract - Final",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file_format",
+							"value": "lab_report",
+							"type": "text"
+						},
+						{
+							"key": "file",
+							"description": "png format input - neat",
+							"type": "file",
+							"src": "/C:/Users/varun/Downloads/d4Png.png",
+							"disabled": true
+						},
+						{
+							"key": "file",
+							"description": "snanned pdf input -neat",
+							"type": "file",
+							"src": "/C:/Users/varun/Downloads/neat_scaned.pdf"
+						},
+						{
+							"key": "file",
+							"description": "scanned pdf input - crumbled ",
+							"type": "file",
+							"src": "/C:/Users/varun/Downloads/crumbled_scned.pdf",
+							"disabled": true
+						},
+						{
+							"key": "text",
+							"value": "\"Hemoglobin: 13.4 g/dL WBC: 6.2 10^3/uL Platelet Count: 250 10^3/uL\" ",
+							"description": "text input",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}/extract_final",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"extract_final"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file_format",
+									"value": "lab_report",
+									"type": "text"
+								},
+								{
+									"key": "file",
+									"type": "file",
+									"src": "postman-cloud:///1f09b17d-c076-42b0-8706-ae9185852093"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/extract_minimal",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"extract_minimal"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1693"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"69d-NSLzOgvRTQjnUy6v7z8rLmuuxP8\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 26 Sep 2025 20:32:19 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"tests\": [\n        {\n            \"name\": \"Sodium\",\n            \"value\": 1516,\n            \"unit\": \"mEq/L\",\n            \"range\": {\n                \"low\": 136,\n                \"high\": 145\n            }\n        },\n        {\n            \"name\": \"Sodium\",\n            \"value\": 3,\n            \"unit\": \"mEq/L\",\n            \"range\": {\n                \"low\": 136,\n                \"high\": 145\n            }\n        },\n        {\n            \"name\": \"Blood\",\n            \"value\": 33,\n            \"unit\": null,\n            \"range\": null\n        },\n        {\n            \"name\": \"Sodium\",\n            \"value\": null,\n            \"unit\": \"mEq/L\",\n            \"range\": {\n                \"low\": 136,\n                \"high\": 145\n            }\n        },\n        {\n            \"name\": \"Hemoglobin\",\n            \"value\": 14.7,\n            \"unit\": \"g/dL\",\n            \"range\": {\n                \"low\": 12,\n                \"high\": 15\n            }\n        },\n        {\n            \"name\": \"pH\",\n            \"value\": null,\n            \"unit\": null,\n            \"range\": {\n                \"low\": 4.6,\n                \"high\": 8\n            }\n        },\n        {\n            \"name\": \"RBC\",\n            \"value\": 5.5,\n            \"unit\": \"10^6/uL\",\n            \"range\": {\n                \"low\": 3.5,\n                \"high\": 5.5\n            }\n        },\n        {\n            \"name\": \"HCT\",\n            \"value\": 42.6,\n            \"unit\": \"%\",\n            \"range\": {\n                \"low\": 37,\n                \"high\": 50\n            }\n        },\n        {\n            \"name\": \"MCV\",\n            \"value\": 78.2,\n            \"unit\": \"fL\",\n            \"range\": {\n                \"low\": 82,\n                \"high\": 95\n            }\n        },\n        {\n            \"name\": \"RBC\",\n            \"value\": null,\n            \"unit\": \"10^6/uL\",\n            \"range\": {\n                \"low\": 3.5,\n                \"high\": 5.5\n            }\n        },\n        {\n            \"name\": \"MCH\",\n            \"value\": 27,\n            \"unit\": \"pg\",\n            \"range\": {\n                \"low\": 27,\n                \"high\": 31\n            }\n        },\n        {\n            \"name\": \"MCHC\",\n            \"value\": 34.5,\n            \"unit\": \"g/dL\",\n            \"range\": {\n                \"low\": 32,\n                \"high\": 36\n            }\n        },\n        {\n            \"name\": \"RDW\",\n            \"value\": 13.5,\n            \"unit\": \"%\",\n            \"range\": {\n                \"low\": 11.6,\n                \"high\": 14\n            }\n        },\n        {\n            \"name\": \"RBC\",\n            \"value\": null,\n            \"unit\": \"10^6/uL\",\n            \"range\": {\n                \"low\": 3.5,\n                \"high\": 5.5\n            }\n        },\n        {\n            \"name\": \"WBC\",\n            \"value\": 10400,\n            \"unit\": \"/uL\",\n            \"range\": {\n                \"low\": 4000,\n                \"high\": 11000\n            }\n        },\n        {\n            \"name\": \"NEU%\",\n            \"value\": 64,\n            \"unit\": \"%\",\n            \"range\": {\n                \"low\": 40,\n                \"high\": 70\n            }\n        },\n        {\n            \"name\": \"LYM%\",\n            \"value\": 30,\n            \"unit\": \"%\",\n            \"range\": {\n                \"low\": 20,\n                \"high\": 45\n            }\n        },\n        {\n            \"name\": \"pH\",\n            \"value\": 1,\n            \"unit\": null,\n            \"range\": {\n                \"low\": 4.6,\n                \"high\": 8\n            }\n        },\n        {\n            \"name\": \"MON%\",\n            \"value\": 4,\n            \"unit\": \"%\",\n            \"range\": {\n                \"low\": 2,\n                \"high\": 10\n            }\n        },\n        {\n            \"name\": \"pH\",\n            \"value\": 1,\n            \"unit\": null,\n            \"range\": {\n                \"low\": 4.6,\n                \"high\": 8\n            }\n        },\n        {\n            \"name\": \"pH\",\n            \"value\": 6656,\n            \"unit\": null,\n            \"range\": {\n                \"low\": 4.6,\n                \"high\": 8\n            }\n        },\n        {\n            \"name\": \"pH\",\n            \"value\": 3120,\n            \"unit\": null,\n            \"range\": {\n                \"low\": 4.6,\n                \"high\": 8\n            }\n        },\n        {\n            \"name\": \"pH\",\n            \"value\": 104,\n            \"unit\": null,\n            \"range\": {\n                \"low\": 4.6,\n                \"high\": 8\n            }\n        },\n        {\n            \"name\": \"Sodium\",\n            \"value\": 3,\n            \"unit\": \"mEq/L\",\n            \"range\": {\n                \"low\": 136,\n                \"high\": 145\n            }\n        }\n    ]\n}"
+				},
+				{
+					"name": "png-neat",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file_format",
+									"value": "lab_report",
+									"type": "text"
+								},
+								{
+									"key": "file",
+									"description": "png format input - neat",
+									"type": "file",
+									"src": "/C:/Users/varun/Downloads/d4Png.png"
+								},
+								{
+									"key": "file",
+									"description": "snanned pdf input -neat",
+									"type": "file",
+									"src": "/C:/Users/varun/Downloads/neat_scaned.pdf",
+									"disabled": true
+								},
+								{
+									"key": "file",
+									"description": "scanned pdf input - crumbled ",
+									"type": "file",
+									"src": "/C:/Users/varun/Downloads/crumbled_scned.pdf",
+									"disabled": true
+								},
+								{
+									"key": "text",
+									"value": "\"Hemoglobin: 13.4 g/dL WBC: 6.2 10^3/uL Platelet Count: 250 10^3/uL\" ",
+									"description": "text input",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/extract_final",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"extract_final"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "Content-Length",
+							"value": "1852"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 27 Sep 2025 10:03:41 GMT"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"73c-Pt2USXkA0jKELMa6vYEzO68/4d8\""
+						},
+						{
+							"key": "Ngrok-Agent-Ips",
+							"value": "2401:4900:971e:b22d:c8c0:61e4:d76c:214e"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"tests\": [\n        {\n            \"name\": \"Sodium\",\n            \"value\": 3,\n            \"unit\": \"mEq/L\",\n            \"status\": \"low\",\n            \"ref_range\": {\n                \"low\": 136,\n                \"high\": 144\n            }\n        },\n        {\n            \"name\": \"Clotting Time\",\n            \"value\": 23,\n            \"unit\": \"minutes\",\n            \"status\": \"high\",\n            \"ref_range\": {\n                \"low\": 4,\n                \"high\": 8\n            }\n        },\n        {\n            \"name\": \"SGOT\",\n            \"value\": 33,\n            \"unit\": \"U/L\",\n            \"status\": \"normal\",\n            \"ref_range\": {\n                \"low\": 8,\n                \"high\": 33\n            }\n        },\n        {\n            \"name\": \"Hemoglobin\",\n            \"value\": 14.7,\n            \"unit\": \"g/dL\",\n            \"status\": \"normal\",\n            \"ref_range\": {\n                \"low\": 12,\n                \"high\": 15\n            }\n        },\n        {\n            \"name\": \"RBC\",\n            \"value\": 5.5,\n            \"unit\": \"10^6/uL\",\n            \"status\": \"normal\",\n            \"ref_range\": {\n                \"low\": 3.5,\n                \"high\": 5.5\n            }\n        },\n        {\n            \"name\": \"HCT\",\n            \"value\": 42.6,\n            \"unit\": \"%\",\n            \"status\": \"normal\",\n            \"ref_range\": {\n                \"low\": 37,\n                \"high\": 50\n            }\n        },\n        {\n            \"name\": \"MCV\",\n            \"value\": 78.2,\n            \"unit\": \"fL\",\n            \"status\": \"low\",\n            \"ref_range\": {\n                \"low\": 82,\n                \"high\": 95\n            }\n        },\n        {\n            \"name\": \"MCH\",\n            \"value\": 27,\n            \"unit\": \"pg\",\n            \"status\": \"normal\",\n            \"ref_range\": {\n                \"low\": 27,\n                \"high\": 31\n            }\n        },\n        {\n            \"name\": \"MCHC\",\n            \"value\": 34.5,\n            \"unit\": \"g/dL\",\n            \"status\": \"normal\",\n            \"ref_range\": {\n                \"low\": 32,\n                \"high\": 36\n            }\n        },\n        {\n            \"name\": \"RDW\",\n            \"value\": 13.5,\n            \"unit\": \"%\",\n            \"status\": \"normal\",\n            \"ref_range\": {\n                \"low\": 11.6,\n                \"high\": 14\n            }\n        },\n        {\n            \"name\": \"WBC\",\n            \"value\": 10400,\n            \"unit\": \"/uL\",\n            \"status\": \"normal\",\n            \"ref_range\": {\n                \"low\": 4000,\n                \"high\": 11000\n            }\n        },\n        {\n            \"name\": \"NEU%\",\n            \"value\": 64,\n            \"unit\": \"%\",\n            \"status\": \"normal\",\n            \"ref_range\": {\n                \"low\": 40,\n                \"high\": 70\n            }\n        },\n        {\n            \"name\": \"LYM%\",\n            \"value\": 30,\n            \"unit\": \"%\",\n            \"status\": \"normal\",\n            \"ref_range\": {\n                \"low\": 20,\n                \"high\": 45\n            }\n        },\n        {\n            \"name\": \"EOS%\",\n            \"value\": 1,\n            \"unit\": \"%\",\n            \"status\": \"normal\",\n            \"ref_range\": {\n                \"low\": 1,\n                \"high\": 6\n            }\n        },\n        {\n            \"name\": \"MON%\",\n            \"value\": 4,\n            \"unit\": \"%\",\n            \"status\": \"normal\",\n            \"ref_range\": {\n                \"low\": 2,\n                \"high\": 10\n            }\n        },\n        {\n            \"name\": \"BAS%\",\n            \"value\": 1,\n            \"unit\": \"%\",\n            \"status\": \"normal\",\n            \"ref_range\": {\n                \"low\": 0,\n                \"high\": 2\n            }\n        },\n        {\n            \"name\": \"Absolute Neutrophil Count\",\n            \"value\": 6.656,\n            \"unit\": \"10^3/uL\",\n            \"status\": \"normal\",\n            \"ref_range\": {\n                \"low\": 2,\n                \"high\": 7\n            }\n        }\n    ],\n    \"summary\": \"Most of your test results are normal. However, your sodium level is low, your blood is taking longer than usual to clot, and your red blood cells are slightly smaller than average. Your doctor will discuss these results with you.\",\n    \"status\": \"ok\"\n}"
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"requests": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"requests": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "base_url",
+			"value": ""
+		}
+	]
+}
