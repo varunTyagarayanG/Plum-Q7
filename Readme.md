@@ -22,7 +22,7 @@ The codebase is structured around **services**, **controllers** and **routes** t
 
 1. **Clone the repository**  
    ```bash
-   git clone https://github.com/your-username/document-extraction-api.git
+   git clone https://github.com/varunTyagarayanG/Plum-Q7.git
    cd document-extraction-api
    ```
 
